@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crud de Actas</title>
+    <link rel="stylesheet" href="../../public/css/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <nav class="navbar">
+        <div class="logo">
+          <img src="../../public/img/imagen.png" alt="Logo" />
+          <a href="">CRUD</a>
+        </div>
+        <div class="nav-links">
+          <a href="usuarios.html">Usuarios</a>
+          <a href="actas.html">Actas</a>
+          <a href="#" onclick="cerrarSesion()">Cerrar sesión</a>
+        </div>
+      </nav>
+
+      <div class="form-section">
+        <h2>Agregar acta</h2>
+        <form id="actaForm">
+          <div class="form-container">
+            <div>
+              <div class="input-group">
+                <label for="date">Fecha reunion</label>
+                <input id="date" type="date" required />
+              </div>
+              <div class="input-group">
+                <label for="startHour">Hora inicio</label>
+                <input id="startHour" type="time" required />
+              </div>
+              <div class="input-group">
+                <label for="finishHour">Hora finalizacion</label>
+                <input id="finishHour" type="time" required />
+              </div>
+              <div class="input-group">
+                <label for="assistants">Asistentes</label>
+                <input id="assistants" type="number" required />
+              </div>
+            </div>
+            <div>
+              <div class="input-group">
+                <label for="matters">Asunto reunion</label>
+                <input id="matters" type="text" required />
+              </div>
+              <div class="input-group">
+                <label for="develop">Desarrollo reunion</label>
+                <input id="develop" type="text" required />
+              </div>
+              <div class="input-group">
+                <label for="commitments">Compromisos</label>
+                <input id="commitments" type="text" required />
+              </div>
+              <div class="input-group">
+                <label for="responsible">Responsable</label>
+                <input id="responsible" type="text" required />
+              </div>
+            </div>
+          </div>
+
+          <div class="buttons">
+            <button type="submit">Agregar acta</button>
+          </div>
+        </form>
+      </div>
+      <div id="load" class="user-list"></div>
+    </div>
+    <script src="../../public/js/actas.js"></script>
+  </body>
+</html>

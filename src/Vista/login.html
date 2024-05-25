@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="../../public/css/login.css" />
+  </head>
+
+  <body>
+    <main class="main-container">
+      <div class="login-container">
+        <div class="image-container">
+          <img src="../../public/img/imagen.png" alt="Login Image" />
+        </div>
+        <div class="form-container">
+          <div class="welcome-text">
+            <h2>Bienvenido</h2>
+            <p>Aqui podra gestionar sus usuarios y actas</p>
+          </div>
+          <form id="loginForm">
+            <div class="input-group">
+              <label for="username">Username:</label>
+              <input type="text" placeholder="usuario" id="username" required />
+            </div>
+            <div class="input-group">
+              <label for="password">Password:</label>
+              <input
+                type="password"
+                placeholder="password"
+                id="password"
+                required
+              />
+            </div>
+            <div class="button-container">
+              <button type="submit">Iniciar sesión</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <script src="../../public/js/login.js"></script>
+  </body>
+</html>
